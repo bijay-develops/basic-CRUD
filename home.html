@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic crud</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="BookName">Book Name</label>
+                        <input type="text" name="BookName" id="ProductName">
+                    </div>
+                    <div>
+                        <label for="BookValue">Book Price</label>
+                        <input type="number" name="BookValue" id="BookValue"></div>
+                    <div>
+                        <label for="SNnumber">SN Number</label>
+                        <input type="number" name="SNnumber" id="SNnumber">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="Reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storelist">
+                        <thead>
+                            <tr>
+                                <th>Book Name</th>
+                                <th>Book Price</th>
+                                <th>SN Number</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
